@@ -1,0 +1,170 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #f4f7fb;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: linear-gradient(90deg, #0d47a1, #1976d2);
+    color: white;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+
+/* NAV HOVER */
+nav a::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: orange;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(to right, #2196f3, #21cbf3);
+    color: white;
+}
+
+.hero h2 {
+    font-size: 40px;
+}
+
+/* BUTTON */
+.btn {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: orange;
+    border: none;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: darkorange;
+    transform: scale(1.05);
+}
+
+/* FEATURES */
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+}
+
+.box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* COURSES */
+.courses {
+    padding: 60px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    width: 220px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* TESTIMONIAL */
+.testimonial {
+    text-align: left;
+    padding: 50px;
+    background: #e3f2fd;
+}
+
+/* CTA */
+.cta {
+    text-align: center;
+    padding: 60px;
+    background: linear-gradient(90deg, #0d47a1, #1976d2);
+    color: white;
+}
+
+/* CONTACT */
+.contact {
+    text-align: center;
+    padding: 40px;
+}
+
+.contact input, .contact textarea {
+    width: 60%;
+    padding: 10px;
+    margin: 10px;
+}
+
+/* FOOTER */
+footer {
+    background: #222;
+    color: #ccc;
+    text-align: center;
+    padding: 15px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+

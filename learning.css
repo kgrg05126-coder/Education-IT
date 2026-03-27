@@ -1,0 +1,257 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #f4f7fb;
+    background-image:blue;;
+    scroll-behavior: smooth;
+}
+h2, h3, h4 {
+    font-family: 'Times New Roman', sans-serif;
+}
+p {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    font-family: Georgia, serif;
+}
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: linear-gradient(90deg, #0d47a1, #1976d2);
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    font-weight: 500;
+}
+
+/* NAV HOVER */
+nav a::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: orange;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+
+.hero p {
+    font-size: 20px;
+}
+/* BUTTON */
+.btn {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: orange;
+    border: none;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: darkorange;
+    transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}.course {
+    margin: 5px;   
+    padding: 0px;      
+    background: white;
+    border-radius: 0px;
+    
+}
+
+/* Reduce paragraph spacing inside course */
+.course p {
+    margin: 4px 0;   /* small gap between paragraphs */
+}
+
+/* Reduce spacing for lists */
+.course ul {
+    margin: 4px 0;
+    padding-left: 0px;
+}
+
+.course li {
+    margin: 2px 0;
+}
+.pricing {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* CARD */
+.pricing-card {
+    background: white;
+    margin: 15px;
+    padding: 30px;
+    width: 260px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+}
+
+/* POPULAR PLAN */
+.popular {
+    border: 3px solid orange;
+    transform: scale(1.05);
+}
+
+/* TEXT */
+.pricing-card h1 {
+    color: #1976d2;
+    margin: 15px 0;
+}
+
+.pricing-card ul {
+    list-style: none;
+    margin: 15px 0;
+}
+
+.pricing-card li {
+    margin: 8px 0;
+}
+/* FORM CONTAINER */
+.form-container {
+    width: 50%;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+
+/* ABOUT CONTENT */
+content {
+    padding: 50px 20px;
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+
+
+content p {
+    margin-top: 10px;
+    line-height: 1.6;
+    float:centre;
+}
+
+/* WHY US SECTION */
+.why-us {
+    background: #eef3fb;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.why-us .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.why-us .box {
+    background: white;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 220px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.why-us .box:hover {
+    transform: translateY(-5px);
+}
+
+/* TEAM SECTION */
+.team {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.team .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.team-card {
+    background: white;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.team-card:hover {
+    transform: scale(1.05);
+}
+
+.team-card h4 {
+    color: #1976d2;
+    margin-bottom: 5px;
+}
+.he h1 {
+    font-size: 48px;
+    color: red;
+    margin: 20px auto;
+    font-family: 'Times New Roman', sans-serif;
+}
+
+h2, h3{
+margin: 20px auto;
+    font-family: 'Times New Roman', sans-serif;
+}
+
+.he p {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}

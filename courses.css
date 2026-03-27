@@ -1,0 +1,272 @@
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #f4f7fb;
+    scroll-behavior: smooth;
+}
+h1, h2, h3, h4 {
+    font-family: 'Times New Roman', sans-serif;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: linear-gradient(90deg, #0d47a1, #1976d2);
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    font-weight: 500;
+}
+
+/* NAV HOVER */
+nav a::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: orange;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+
+.hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.hero p {
+    font-size: 20px;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+/* BUTTON */
+.btn {
+    margin-top: 20px;
+    padding: 12px 30px;
+    background: orange;
+    border: none;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: 600;
+}
+
+.btn:hover {
+    background: darkorange;
+    transform: scale(1.05);
+}
+
+/* FEATURES */
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.features .box {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    font-weight: 500;
+    font-size: 18px;
+    transition: transform 0.3s;
+}
+
+.features .box:hover {
+    transform: translateY(-10px);
+}
+
+/* COURSES */
+.courses {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.courses h2 {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 40px;
+}
+
+/* Advanced Flip Course Cards */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.course-card {
+    width: 300px;
+    height: 400px;
+    perspective: 1500px;
+}
+
+.course-card div {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    transition: transform 0.8s ease;
+    transform-style: preserve-3d;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    cursor: pointer;
+    overflow: hidden;
+}
+
+
+
+.card-front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: white;
+}
+
+.card-front {
+    background: linear-gradient(135deg, #2196f3, #21cbf3);
+    text-align: center;
+}
+
+.card-front img {
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+    margin-bottom: 15px;
+}
+
+.card-front h3 {
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+.card-front p {
+    font-size: 14px;
+}
+
+/* TESTIMONIAL */
+.testimonial {
+    text-align: center;
+    padding: 60px 20px;
+    background: #e3f2fd;
+    font-style: italic;
+}
+
+/* CTA */
+.cta {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(90deg, #0d47a1, #1976d2);
+    color: white;
+}
+
+.cta h2 {
+    margin-bottom: 30px;
+}
+
+/* CONTACT */
+.contact {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.contact input, .contact textarea {
+    width: 60%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.contact input:focus, .contact textarea:focus {
+    outline: none;
+    border-color: #1976d2;
+}
+
+/* FOOTER */
+footer {
+    background: #222;
+    color: #ccc;
+    text-align: center;
+    padding: 20px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact input, .contact textarea {
+        width: 90%;
+    }
+}
+.he h1 {
+    font-size: 48px;
+    color: red;
+    margin: 20px auto;
+    font-family: 'Times New Roman', sans-serif;
+}
+
+h2, h3{
+margin: 20px auto;
+    font-family: 'Times New Roman', sans-serif;
+}
+
+.he p {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
